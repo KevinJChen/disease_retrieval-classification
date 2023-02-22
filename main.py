@@ -7,6 +7,10 @@ import time
 '''
 disease -> medication -> pathway -> pathway information
 
+disease -> medication -> gene -> gene information
+
+
+
 disease -> medication
 SYNTHEA data: retrieve medication from those prescribed due to disease
 
@@ -14,6 +18,7 @@ medication -> pathway
 
 PharmGKB: https://www.pharmgkb.org/pathways
 Drug Bank: https://go.drugbank.com
+
 DGIdb: https://www.dgidb.org/api
 
 pathway -> pathway information

@@ -22,5 +22,5 @@ def getInteractions():
     response = requests.get("https://dgidb.org/api/v2/interactions")
     loaded = json.loads(response.text)
 
-    print(loaded["records"][])
+    # print(loaded["records"][])
 
