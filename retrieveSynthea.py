@@ -56,16 +56,6 @@ def retrieveMedications(extracted_medication):
             for element in row[6].lower().split(" "):
                 if element in extracted_medication and element not in id_medication[row[2]]:
                     id_medication[row[2]].append(element)
-
-            # if no medication match from extracted_medication, continue
-            #medication = extractName(row[6].lower(), extracted_medication)
-            #if not medication:
-            #    continue
-            #id_medication.append([row[2], removeTag(row[12].lower()), medication])
-
-            # for word in row[6].lower():
-            #     if word in extracted_medication and word not in id_medication[row[2]]:
-            #         id_medication[row[2]].append(word)
-
+        print("Retrieved " + len(spamreader) + " patients, medication, and diseases.")
     return id_medication
 
