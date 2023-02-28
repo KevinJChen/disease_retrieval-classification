@@ -109,13 +109,13 @@ def main():
     patient_information = {}
     for k, v in id_medication.items():
 
-        # patient ID
+        # patient ID (key)
         patient_information[k] = []
 
-        # disease
+        # disease (value[0])
         patient_information[k].append(v[0])
 
-        # medication list
+        # medication list (value[1])
         patient_information[k].append(v[1:])
 
         all_interactions = []
@@ -123,8 +123,18 @@ def main():
             if interaction[0] in v[1:]:
                 all_interactions.append(interaction)
 
-        # drug-gene interactions
+        # drug-gene interactions (value[2])
         patient_information[k].append(all_interactions)
+
+    for k, v in patient_information.items():
+        print("Here is the information for patient (" + str(k) + ")")
+        print("/tThey have the condition: " + str(v[0]))
+        for medication in v[1]:
+            for interaction in v[2]:
+                if medication == interaction[0]:
+                    print("The medication/drug, " + str(medication) + " is an " + str(interaction[1] + ".") +
+                          " with the gene, " + str(interaction[2]))
+
 
     # track time of program
     end = time.time()
