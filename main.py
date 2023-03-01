@@ -157,10 +157,14 @@ def main():
                     f.write(str(disease) + "\n")
         else:
             with open('output.txt', 'w') as f:
-                for interaction in drug_gene_interactions:
-
-
-
+                f.write(str(disease_input.lower()) + " is currently treated with the following medications:\n")
+                medication_set = set()
+                for k, v in id_medication.items():
+                    if disease_input.lower() == v[0]:
+                        for medication in v[2:]:
+                            medication_set.add(medication)
+                for medication in medication_set:
+                    f.write(str(medication) + "\n")
         if os.path.getsize('output.txt') == 0:
             print("Invalid disease name.")
     elif query_type.lower() == "medication":
@@ -175,6 +179,14 @@ def main():
                         medication_set.add(medication)
                 for medication in medication_set:
                     f.write(str(medication) + "\n")
+        else:
+            with open('output.txt', 'w') as f:
+                for interaction in drug_gene_interactions:
+                    if medication_input.lower() == interaction[0]:
+                        if not interaction[1]:
+                            f.write(str(interaction[0]) + " is influencer of " + str(interaction[2] + "\n"))
+                        else:
+                            f.write(str(interaction[0]) + "," + str(interaction[1][0]) + "," + str(interaction[2] + "\n"))
         if os.path.getsize('output.txt') == 0:
             print("Invalid medication name.")
     elif query_type.lower() == "gene":
