@@ -207,5 +207,6 @@ def main():
         return
     print("Query retrieved and results placed in output.txt")
 
+
 if __name__ == "__main__":
     main()
