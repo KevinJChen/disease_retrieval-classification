@@ -186,7 +186,7 @@ def main():
                         if not interaction[1]:
                             f.write(str(interaction[0]) + " is influencer of " + str(interaction[2] + "\n"))
                         else:
-                            f.write(str(interaction[0]) + "," + str(interaction[1][0]) + "," + str(interaction[2] + "\n"))
+                            f.write(str(interaction[0]) + " is " + str(interaction[1][0]) + " of " + str(interaction[2] + "\n"))
         if os.path.getsize('output.txt') == 0:
             print("Invalid medication name.")
     elif query_type.lower() == "gene":

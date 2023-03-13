@@ -1,8 +1,8 @@
 acetaminophen is influencer of mark2
-acetaminophen,inhibitor,faah
+acetaminophen is inhibitor of faah
 acetaminophen is influencer of ugt1a6
 acetaminophen is influencer of brd2
-acetaminophen,inhibitor,ptgs2
+acetaminophen is inhibitor of ptgs2
 acetaminophen is influencer of sult1a3
 acetaminophen is influencer of pla2g4a
 acetaminophen is influencer of plcg1
@@ -24,18 +24,18 @@ acetaminophen is influencer of cyp2d6
 acetaminophen is influencer of sult1a3
 acetaminophen is influencer of brd2
 acetaminophen is influencer of cyp2e1
-acetaminophen,inhibitor,ptgs1
+acetaminophen is inhibitor of ptgs1
 acetaminophen is influencer of oprm1
 acetaminophen is influencer of sult1a4
 acetaminophen is influencer of tnfrsf11a
 acetaminophen is influencer of hspa8
 acetaminophen is influencer of plcg1
 acetaminophen is influencer of il2
-acetaminophen,activator,trpv1
-acetaminophen,inhibitor,faah
+acetaminophen is activator of trpv1
+acetaminophen is inhibitor of faah
 acetaminophen is influencer of ugt1a
 acetaminophen is influencer of cyp2c9
-acetaminophen,inhibitor,ptgs2
+acetaminophen is inhibitor of ptgs2
 acetaminophen is influencer of ugt2b15
 acetaminophen is influencer of cdkn1a
 acetaminophen is influencer of cyp2a6
